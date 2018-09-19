@@ -29,17 +29,15 @@ while frontier:
     # The search should terminate once the goal is reached.
     # Remember to increment the step counter to keep track of how many steps the search takes!
     # You will need to modify the placeholder code below.
+    steps += 1
     k = frontier.popleft() # taking out the first term and generating its children
+    if 2*k == goal:
+        break
+    if (2*k+1) == goal:
+        break
     frontier.append(2*k)
-    steps += 1
-    if frontier[0] == goal:
-        break
-    
     frontier.append(2*k+1)
-    steps += 1
     #print frontier, steps
-    if frontier[1] == goal:
-        break
     
 # Find the length of the frontier by changing the line below.
 frontier_size = len(frontier)
