@@ -1,8 +1,3 @@
-
-# coding: utf-8
-
-# In[2]:
-
 def a(): #moves to s' with reward 0
     states.append(1)
     rewards.append(0)
@@ -65,14 +60,3 @@ run(time, 11)
 # Say said park closes at 6pm, and has 2 rides that last 30 minutes, and 1 that 
 # lasts 5 minutes. After 5.30pm, the park may no longer open the 30 minute rides
 # but still have the 5 minute one available to generate more profit.
-
-
-# In[ ]:
-
-
-
-
-# In[ ]:
-
-
-
